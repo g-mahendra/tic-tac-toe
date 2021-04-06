@@ -8,8 +8,8 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 const useStyles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
-    position: 'absolute',
-    bottom: theme.spacing(1)
+    position: "absolute",
+    bottom: theme.spacing(1),
   },
   main: {
     boxSizing: "border-box",
@@ -26,10 +26,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "400px",
     marginLeft: "30px",
   },
-  heroSvg:{
-    height: '100vh',
-    width: 'auto'
-  }
+  heroSvg: {
+    height: "100vh",
+    width: "auto",
+  },
 }));
 
 const Dashboard = () => {
@@ -73,11 +73,16 @@ const Dashboard = () => {
             Lets Play
           </button>
         </div>
-        <Link className={classes.link} href="#">
-          <Typography variant="button">
-            Checkout the sourcecode on Github
-          </Typography>
-        </Link>
+        <footer>
+          <Link
+            className={classes.link}
+            href="https://github.com/g-mahendra/tic-tac-toe"
+          >
+            <Typography variant="button">
+              Checkout the sourcecode on Github
+            </Typography>
+          </Link>
+        </footer>
       </div>
       <div>
         <svg
