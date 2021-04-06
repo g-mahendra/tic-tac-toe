@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import Instructions from "../components/Instructions";
 
 const useStyles = makeStyles((theme) => ({
   link: {
@@ -36,6 +37,15 @@ const Dashboard = () => {
   const router = useRouter();
   const { anonymusly } = useAuth();
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
   const signinUser = () => {
     try {
       anonymusly();
@@ -72,6 +82,21 @@ const Dashboard = () => {
           >
             Lets Play
           </button>
+          <button
+            style={{
+              backgroundImage: "linear-gradient(to right, blue, powderblue)",
+              padding: "7px 0",
+              border: "none",
+              width: "300px",
+              color: "white",
+              marginTop: "10px",
+            }}
+            onClick={handleToggle}
+            id={classes.playButton}
+          >
+            Instructions
+          </button>
+          <Instructions open={open} handleClose={handleClose} />
         </div>
         <footer>
           <Link
