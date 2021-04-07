@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Square from "./Square";
 import firebase from "firebase/app";
 import "firebase/database";
-import Head from "next/head";
-import { useAuth } from "../src/config/context/AuthContext";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";

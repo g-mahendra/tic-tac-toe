@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     [theme.breakpoints.down("sm")]: {
       height: "40vh",
-    },
+    },  
   },
   paper: {
     display: "flex",
