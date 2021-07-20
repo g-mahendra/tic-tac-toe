@@ -10,4 +10,4 @@ A [NextJS](https://nextjs.org/) ( [ReactJS](https://reactjs.org/) ), [Material U
 
 ## Where To Play ?
 
-This app is deployed using [Vercel](https://vercel.com/). Visit [meet-mahendra](https://meet-mahendra.vercel.app/) to play. Enjoy!
+This app is deployed using [Vercel](https://vercel.com/). Visit [meet-mahendra](https://tic-tac-toe-multiplayer-g-mahendra.vercel.app/) to play. Enjoy!
